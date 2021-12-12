@@ -21,6 +21,15 @@ public class Client {
         PrintWriter outClient = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())), true);
 
         // todo: implement the scenario
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Entrer une chaine : ");
+        String mot=sc.nextLine();
+        outClient.println(mot);
+        System.out.println("Input: "+mot);
+        String mot1=inClient.readLine();
+        System.out.println("Output : "+mot1);
+
+
 
         //close in / out
         inClient.close();
