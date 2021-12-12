@@ -21,6 +21,14 @@ public class Server {
 
         // todo: implement the scenario
 
+        String c=inServer.readLine();
+        String c1="";
+        c1= c.replaceAll("[AEIYOUaeiyou]","");
+        c=c1;
+        outServer.println(c);
+
+
+
         // Close in / out
         inServer.close();
         outServer.close();
